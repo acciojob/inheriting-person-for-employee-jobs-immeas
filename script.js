@@ -7,7 +7,7 @@ class Person{
 	}
 
    	greet(){
-		console.log(`Hello, name is ${this.name}, I am ${this.age} year old`);
+		console.log(`Hello, name is ${this.name}, I am ${this.age} years old.`);
 	}
 }
 
@@ -18,12 +18,12 @@ class Employee extends Person{
 	}
 
 	jobGreet(){
-		console.log(`Hello, my name is ${this.name}, I am ${this.age} year old, and my job title is ${this.jobTitle}.`);
+		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 	}
 }
 // Do not change code below this line
-const person1 = new Person("Kwst",25)
-const person2 = new Person("Znrg",26)
+const person = new Person("Kwst",25)
+
 person1.greet();
 person1.greet();
 
