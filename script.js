@@ -22,7 +22,7 @@ class Employee extends Person{
 	}
 }
 // Do not change code below this line
-const person = new Person("Kwst",25)
+const person = new Person("Alice",25)
 
 person1.greet();
 person1.greet();
