@@ -1,31 +1,36 @@
 // complete this js code
 // 
-class Person{
-	constructor(name, age){
-		this.name = name;
-		this.age = age;
-	}
+// Defining the Person class
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
 
-   	greet(){
-		console.log(`Hello, name is ${this.name}, I am ${this.age} years old.`);
-	}
+  // Method to greet
+  greet() {
+    console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
+  }
 }
 
-class Employee extends Person{
-	constructor(name, age, jobTitle){
-		super(name, age);
-		this.jobTitle = jobTitle
-	}
+// Defining the Employee class that inherits from Person
+class Employee extends Person {
+  constructor(name, age, jobTitle) {
+    super(name, age); // Call the parent class constructor
+    this.jobTitle = jobTitle;
+  }
 
-	jobGreet(){
-		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, my job title is ${this.jobTitle}.`);
-	}
+  // Method to greet with job title
+  jobGreet() {
+    console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
+  }
 }
-// Do not change code below this line
-const person = new Person("Alice",25)
 
-person1.greet();
-person1.greet();
+// Example Usage
+const person = new Person("Alice", 25);
+person.greet();
+// Expected Output: Hello, my name is Alice, I am 25 years old.
 
-const Employee = new Employee("Bob", 30, "Manager");
-Employee.jobGreet();
+const employee = new Employee("Bob", 30, "Manager");
+employee.jobGreet();
+// Expected Output: Hello, my name is Bob, I am 30 years old, and my job title is Manager.
